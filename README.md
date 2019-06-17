@@ -2,7 +2,7 @@
 Recepten is een onderdeel van onze progressive web-app genaamd Mattie. 
 
 # images
-Zet hier alle afbeeldingen die je nodig hebt in het project. Er kunnen submapjes gemaakt worden, maar let erop dat je de benodigde afbeeldingen toevoegt aan de ServiceWorker.
+![](animation.gif)
 
 # Plugins
 ```js
