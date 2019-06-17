@@ -1,0 +1,10 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#uitgelicht {
+	color: #484848;
+	margin-left: -60vw;
+	margin-top: 20px;
+}

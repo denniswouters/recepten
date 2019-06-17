@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	line-height: 20px;
+	font-size: 0.9em;
+	background-color: rgba(251, 251, 251,)
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.menubg {
+	/* receptenbg.svg */
+	position: absolute;
+	/* top: -122px; */
+}
+
+#backButton {
+	/* backButton.svg */
+
+	position: absolute;
+	width: 13px;
+	height: 28px;
+	left: 25px;
+	top: 55px;
+}
+
+#menuTitel {
+	/* Salade met kip */
+
+	position: absolute;
+	width: 245px;
+	height: 46px;
+	left: 30px;
+	top: 106px;
+
+	font-family: 'Lato', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 62.4%;
+	/* or 17px */
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.ondertitelKlok {
+	/* ondertitelKlok.svg */
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	left: 27px;
+	top: 158px;
+}
+
+.ondertitelPersonen {
+	/* ondertitelPersonen.svg */
+
+	position: absolute;
+	width: 50px;
+	height: 40px;
+	left: 170px;
+	top: 156px;
+}
+
+.ondertitelTekst {
+	/* 25 min */
+
+	position: absolute;
+	width: 85px;
+	height: 46px;
+	left: 70px;
+	top: 150px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 62.4%;
+	/* or 12px */
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.ondertitelTekst2 {
+	/* 1 pers. */
+
+	position: absolute;
+	width: 85px;
+	height: 46px;
+	left: 233px;
+	top: 152px;
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 62.4%;
+	/* or 12px */
+	display: flex;
+	align-items: center;
+
+	color: #FFFFFF;
+
+	text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* .headerReceptItem::after {
+	content: '';
+	width: 500px;
+	height: 440px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, #6EC19C 0%, rgba(255, 255, 255, 0) 100%);
+	position: absolute;
+	transform: rotate(-18deg);
+	left: -72px;
+	top: -78px;
+}
+
+.headerReceptItemWhite::after {
+	content: '';
+	width: 500px;
+	height: 440px;
+	border-radius: 50%;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+	position: absolute;
+	transform: rotate(-18deg);
+	left: -72px;
+	top: -78px;
+} */
+
+.headerReceptItem::after {
+	content: '';
+	width: 375px;
+	height: 263px;
+	background: linear-gradient(to bottom, #6EC19C 0%, rgba(255, 255, 255, 0) 120%);
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.ingredientenTitel {
+	/* Ingrediënten */
+
+	position: absolute;
+	width: 312px;
+	height: 42px;
+	left: 31px;
+	top: 295px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 62.4%;
+	/* or 12px */
+
+	color: #000000;
+}
+
+.ingredientenTitelBereiding {
+	/* Bereidingswijze */
+
+	position: absolute;
+	width: 312px;
+	height: 42px;
+	left: 31px;
+	top: 605px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 19px;
+	line-height: 62.4%;
+	/* or 12px */
+
+	color: #000000;
+}
+
+.ingredientenRecept {
+	/* - 120 gr volkoren pasta - 1 avocado - Handje rucola - 1 courgette (of gegrilde paprika) - 1 bol mozzarella - verse basilicum - Handje pistache (ongezouten) - 12 cherrytomaatjes - 500 gr kip */
+
+	position: absolute;
+	width: 312px;
+	height: 312px;
+	left: 31px;
+	top: 331px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 170%;
+	/* or 27px */
+
+	color: #000000;
+}
+
+.ingredientenBereiding {
+	/* Sed posuere consectetur est at lobortis. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Nulla vitae elit libero, a pharetra augue. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod. */
+
+	position: absolute;
+	width: 312px;
+	height: 292px;
+	left: 31px;
+	top: 641px;
+
+	font-family: Lato;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 150%;
+	/* or 24px */
+
+	color: #000000;
+}
+
+#content {
+	margin: 40px auto;
+	text-align: center;
+	width: 600px;
+	position: relative;
+	left: 20px;
+}
+#content h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 0 40px 0;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.feedback {
+	font-size: 14px;
+	color: #b1b1b1;
+}
+
+#content {
+	margin: 40px auto;
+	text-align: center;
+	width: 600px;
+}
+#content h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin: 0 0 40px 0;
+	font-size: 25px;
+	line-height: 30px;
+}
+
+.feedback {
+	font-size: 14px;
+	color: #b1b1b1;
+}
+
+.recepten-subkopje-h3 {
+	padding: 50px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+
+.afbeelding-keukensoort {
+	width: 75px;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.normaleTekst {
+	/* class om stijl aan te passen als nodig is */
+	line-height: 1;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+.menuIcon {
+	/* Group 3.1 */
+
+	position: absolute;
+	width: 34.7px;
+	height: 34.35px;
+	left: 31px;
+	top: 55px;
+}
+
+.category-item {
+	display: inline-block;
+	margin: 5px;
+	text-align: center;
+	width: 78px;
+}
+
+.category-item a {
+	margin-top: 10px;
+	display: block;
+	text-decoration: none;
+	color: #B0B0B0;
+}
+
+.content .horizontal-scroll {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+#soortenKeukens {
+    color: #484848;
+    margin-left: -60vw;
+    margin-top: 20px;
+}
+
+.horizontal-scroll {
+    height: 67px !important;
+}
+
+.block {
+	margin-top: 20px;
+	width: 300px;
+	height: 100px;
+	border-radius: 5px;
+	background-color: #F8F8F8;
+	-webkit-box-shadow: 0px 0px 16px 2px rgba(217,217,217,1);
+	-moz-box-shadow: 0px 0px 16px 2px rgba(217,217,217,1);
+	box-shadow: 0px 0px 16px 2px rgba(217,217,217,1);
+}
+
+.image {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.naamgerecht {
+	font-weight: 800;
+	margin-top: 26px;
+	font-size: 18px;
+	position: absolute;
+	margin-left: 100px;
+}
+
+.naamcategorie {
+	margin-top: 50px;
+	font-size: 14px;
+	position: absolute;
+	margin-left: 100px;
+	color: #484848;
+	font-style: italic;
+}
