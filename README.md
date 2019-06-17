@@ -1,7 +1,7 @@
 # Recepten
 Recepten is een onderdeel van onze progressive web-app genaamd Mattie. 
 
-# images
+# Images
 ![](animation.gif)
 
 # Plugins
