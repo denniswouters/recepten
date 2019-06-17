@@ -21,7 +21,7 @@ Recepten is een onderdeel van onze progressive web-app genaamd Mattie.
     return this;
   };
 ``` 
-In bovenstaande functie kan aan de hand van de lengtevan eennwwroord een kleur gegeven
+In bovenstaande functie kan aan de hand van de lengte van een woord een kleur gegeven worden.
 
 ```js
  $.fn.generateDishes = function (listElement, clean, items) { 
@@ -39,16 +39,22 @@ In bovenstaande functie kan aan de hand van de lengtevan eennwwroord een kleur g
     }
   }
 ``` 
-Registeert voor nu alleen de ServiceWorker, maar hier mogen andere functies aan toegevoegd worden.
+In bovenstaande functie kan aan de hand van een element in de code een lijst worden ingeladen van een aantal items.
 
-# manifest.json
-Dit bestand zorgt ervoor dat de browser herkent dat het een webapp is en hoe de webapp gebruikt moet worden als hij "geïnstalleerd" is.
+# Install
+Om gebruik te maken van de bovenstaande plugins moet het Javascript bestanden geimporteerd worden in het project. Dit kan als volgt gedaan worden:
+```html
+    <script type="text/javascript" src="js/recepten.js"></script>
+```
+Om de functies te kunnen gebruiken kan je het onderstaande voorbeeld volgen:
+```js
+function filterItems(filterName) {
+  let items = filter(filterName, jsosdn)
 
-# README.md
-Een bestand met de uitleg van alle componenten.
-dennis test.
-# stylesheet.css
-De styling van de app 'Mattie'.
+  $(".container").generateDishes('list', true, items);
 
-# sw.js
-De ServiceWorker is nodig om aan te geven welke bestanden in de cache opgeslagen moeten worden. Bestanden die in deze cache staan kunnen ook offline geladen worden, omdat ze lokaal zijn opgeslagen.
+  $('.dish').changeColorOnTextLength();
+  
+};
+```
+De bovenstaande functie roept beide plugins aan. De functie wordt aangeroepen wanneer een gebruiker op een icoontje klikt (zie Images). Deze functies filtert eerst de items aan de hand van een filter variabele. Zodra er een lijst met gefilterde items wordt gemaakt dan wordt door de functie 'generateDishes' de html aangepast zodat alleen de gefilterde items weergegeven worden. Als laatste worden de items weer opgehaald en dan wordt aan de hand van de lengte van het item bepaald welke kleur de tekst in de html wordt. Dit gebeurd in de functie 'changeColorOnTextLength'.
